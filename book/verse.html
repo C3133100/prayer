@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>特別祝福</title>
+    
+   <script language="javacript">
+         var dig;
+         function displayCount(num){
+          var numbertag="<img src='image/"+num+".gif'>";
+          return numbertage;
+          
+         }
+
+         function stopCount(){
+            clearTimout(number);
+            alert("數字停在"+dig);
+         }
+
+         function startCount(){
+             dig=parselnt(Math.random()*10);
+             var input=display(dig);
+             show.innerHTML=input;
+             number=setTimeout("strtCount()",100);
+         }
+
+    </script>
+</head>
+<body onload="startCount();">
+    <div id="show"></div>
+    <input type="button"onclick="stopCount();"value='停'/>
+</body>
+</html>
